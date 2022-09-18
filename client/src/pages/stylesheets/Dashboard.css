@@ -1,0 +1,171 @@
+
+.psuedoRoot {
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f5f5f5; */
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/stayBG_blur.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+
+}
+
+.eventCard {
+    margin: 40px
+}
+.sidePaneButton{
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 1);
+    font-size: larger;
+    width: 80%;
+    padding: 15px 20px 15px 20px;
+    background-color: rgba(255, 255, 255, 0);
+
+    margin: 20px;
+    margin-top: 5px;
+    margin-left:  0;
+
+    border-color:rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-radius: 0 40px 40px 0;
+    border-width: 2px;
+    outline: none;
+    transition: 1s;
+    transition-timing-function:  cubic-bezier(0.28, 0.11, 0.32, 1);
+    /* height: 45px; */
+}
+
+
+.sidePaneButton:hover{
+    background-color: rgba(255, 255, 255, 0.543);
+    border-color: rgb(255, 255, 255);
+    border-style: solid;    
+    /* border-radius: 15px;     */
+    transition: 0.1s;    
+}
+
+.sidePaneButton:active{
+    background-color: rgb(255, 228, 204);
+    border-color: rgb(243, 155, 67);
+    transition: 0.25s;  
+    border-radius: 0 30px 30px 0;       
+    color: white;
+    background-color: rgba(80, 57, 0, 0.907);
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.75);   
+}        
+
+.sidePaneButton:focus{
+    background-color: rgba(255, 197, 51, 0.543);
+    /* color: black; */
+    /* background-color: #c5e7ec; */
+    border-color: rgb(255, 157, 0);
+    border-style: solid;    
+    /* border-width: 1px; */
+    /* border-radius: 15px;   */
+    transition: 0.25s;      
+}
+
+.sidePaneButton:-webkit-autofill {
+    -webkit-box-shadow: 0 2px 5px 5px rgb(0, 77, 118) inset;
+    background: inherit;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+/* .silent:-webkit-autofill::first-line {
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+} */
+
+.sidePaneButton::placeholder{
+    color: rgba(255, 255, 255, 0.322);
+}
+
+@media only screen and (max-width: 720px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        height: 100vh;
+        width: auto;
+        background-color: #f5f5f5;
+        /* background-image: url('../assets/stayBG_blur.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed; */
+        /* position: absolute; */
+        background: linear-gradient(180deg, rgba(237, 237, 237, 0.39) 0%, rgba(237, 237, 237, 0.35) 0.01%, rgba(235, 235, 235, 0.61) 23.96%, rgba(237, 237, 237, 0.9) 43.75%, #F5F5F5 100%);
+        /* z-index: -1; */
+    }
+    .bodyBG {
+        width: 100vw;
+        height: 100vh;
+
+        align-items: center;
+        justify-content: center;
+        /* transition: 0.25s; */
+    
+    }
+
+
+    .blackLogo {
+        width: auto;
+        align-items: center;
+        height: 100px;
+        /* margin: 0 auto 0 auto; */
+        margin-top: 0;
+        margin-bottom: 0 ;
+        margin-left: calc(50vw - 50px);
+        margin-right: calc(50vw - 50px);
+
+        /* padding-top: 0;
+        padding-bottom: 0;
+        padding-left: auto;
+        padding-right: auto; */
+
+        -webkit-filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25));
+        transition: 0.25s;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .dashboard {
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center;
+        justify-content: center; */
+        height: 100vh;
+        width: auto;
+        /* background-image: url('../assets/stayBG_blur.jpg'); */
+        /* background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed; */
+        /* position: absolute; */
+        background: linear-gradient(90deg, rgba(237, 237, 237, 0.39) 0%, rgba(237, 237, 237, 0.35) 0.01%, rgba(235, 235, 235, 0.61) 23.96%, rgba(237, 237, 237, 0.9) 43.75%, #F5F5F5 100%);
+        /* z-index: -1; */
+    }
+
+    .bodyBG {
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        /* transition: 1s; */
+    
+    }
+
+    .blackLogo {
+        width: 25vw;
+        height: auto;
+        margin: 10vh 10vw 10vh 8vw;
+        -webkit-filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25));
+        transition: 0.25s;
+    }
+
+}    
+

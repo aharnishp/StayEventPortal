@@ -1,0 +1,356 @@
+
+.psuedoRoot {
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #f5f5f5; */
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/stayBG_blur.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+
+}
+
+.color-panel {
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 80%;
+    height: 120px;
+    border-radius: 40px;
+    box-shadow:rgb(0, 0, 0, 0.25) 0px 0px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-box{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    margin: 20px;
+    margin-top: 0;
+    /* opacity: 0.9; */
+
+    /* position: absolute; */
+}
+
+.color-box-palette{
+    width: 100px;
+    height: 50px;
+    /* display: flex; */
+    margin-top: 0;
+    
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.9; */
+
+    /* position: absolute; */
+}
+
+.colorPickerIn {
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    margin: auto;
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.createButton{
+    outline: none;
+    border-style: none;
+    border-radius: 32px;    
+    
+    margin-top: 15px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+
+    /* background: linear-gradient(90deg, #2661AE 0%, #01BFEE 100%); */
+    background-color: #006AF4;
+    color: white;
+
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Inter','SF Pro Display','Roboto',Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
+    
+    transition: 1s;
+}
+
+.createButton:hover{
+    box-shadow: 0px 0px 5px 2px rgb(148, 239, 255), inset 0px 0px 50px 5px rgb(71, 151, 255);
+    transition: 0.25s;
+}
+
+.createButton:active{
+    box-shadow: inset 0px 3px 15px 2px rgb(3, 26, 58);
+    transition: 0.05s;   
+    border-radius: 20px;         
+}
+
+.eventImage::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.eventImage {
+    border-radius: 20px;
+    background-color: #006AF4;
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .bodyBG{
+        width: 100vw;
+        height: 100vh;
+
+        align-items: center;
+        justify-content: center;
+        /* transition: 0.25s; */
+    
+    }
+
+    .eventCard{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .editCard{
+        margin: 20px;
+
+    }
+
+    .sidePane{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .eventCard{
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        height: 100vh;
+        width: auto;
+        background-color: #f5f5f5;
+        /* background-image: url('../assets/stayBG_blur.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed; */
+        /* position: absolute; */
+        background: linear-gradient(180deg, rgba(237, 237, 237, 0.39) 0%, rgba(237, 237, 237, 0.35) 0.01%, rgba(235, 235, 235, 0.61) 23.96%, rgba(237, 237, 237, 0.9) 43.75%, #F5F5F5 100%);
+        /* z-index: -1; */
+    }
+    .bodyBG {
+        width: 100vw;
+        height: 100vh;
+
+        align-items: center;
+        justify-content: center;
+        /* transition: 0.25s; */
+    
+    }
+
+
+    .blackLogo {
+        width: 250px;
+        align-items: center;
+        height: auto;
+        /* margin: 0 auto 0 auto; */
+        margin-top: 0;
+        margin-bottom: 0 ;
+        margin-left: calc(50vw - 125px);
+        margin-right: calc(50vw - 125px);
+
+        font-size: x-large;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
+
+        /* -webkit-filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25)); */
+        transition: 0.25s;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .sidePane{
+        width:40vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventCard {
+        margin-top: calc(33vh - 150px);
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin: auto; */
+    }
+
+    .editCard{
+
+        width: 500px;
+        /* margin-top: 100px;
+        margin-bottom: 100px; */
+
+
+        margin-top: calc(50vh - 250px);
+        margin-bottom: calc(50vh - 250px);
+        margin-left: 20px;
+        margin-right: 20px;
+
+        -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.05));
+
+        /* margin: auto; */
+        /* position: absolute; */
+/* 
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+        margin-right: 0px; */
+
+        /* overflow-y: scroll;
+        overflow-x: hidden; */
+    }
+
+    .timePicker {
+        margin-left: 40px;
+    }
+
+    .dashboard {
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center;
+        justify-content: center; */
+        height: 100vh;
+        width: auto;
+        /* background-image: url('../assets/stayBG_blur.jpg'); */
+        /* background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed; */
+        /* position: absolute; */
+        background: linear-gradient(90deg, rgba(237, 237, 237, 0.39) 0%, rgba(237, 237, 237, 0.35) 0.01%, rgba(235, 235, 235, 0.61) 23.96%, rgba(237, 237, 237, 0.9) 43.75%, #F5F5F5 100%);
+        /* z-index: -1; */
+    }
+
+    .bodyBG {
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        /* transition: 1s; */
+    
+    }
+
+    .blackLogo {
+        font-size: x-large;
+        color: black;
+        opacity: 0.5;
+        width: 25vw;
+        height: auto;
+        margin: 10vh 10vw 10vh 8vw;
+        /* -webkit-filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.25)); */
+        transition: 0.25s;
+    }
+
+}    
+
+
+
+
+.silentCreateEvent{
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: xx-large;
+    padding: 20px 40px 20px 40px;
+    background-color: rgba(255, 255, 255, 0.039);
+
+    border-color:rgba(0, 0, 0, 0.071);
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 2px;
+    outline: none;
+    transition: 1s;
+    transition-timing-function:  cubic-bezier(0.28, 0.11, 0.32, 1);
+    /* height: 45px; */
+}
+
+
+.silentCreateEvent:hover{
+    background-color: rgba(255, 241, 216, 0.534);
+    border-color: rgb(255, 208, 0);
+    border-style: solid;    
+    /* border-radius: 15px;     */
+    transition: 0.1s;    
+}
+
+.silentCreateEvent:active{
+    background-color: rgb(255, 228, 204);
+    border-color: rgb(243, 155, 67);
+    transition: 0.25s;  
+    border-radius: 30px;       
+}        
+
+.silentCreateEvent:focus{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    /* background-color: #c5e7ec; */
+    border-color: rgb(255, 157, 0);
+    border-style: solid;    
+    /* border-width: 1px; */
+    /* border-radius: 15px;   */
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.5);   
+    transition: 0.25s;      
+}
+
+.silentCreateEvent:-webkit-autofill {
+    -webkit-box-shadow: 0 2px 5px 5px rgb(0, 77, 118) inset;
+    background: inherit;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+/* .silentCreateEvent:-webkit-autofill::first-line {
+    font-family: 'Inter', 'Helvetica', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+} */
+
+.silentCreateEvent::placeholder{
+    color: rgba(0, 0, 0, 0.322);
+}
