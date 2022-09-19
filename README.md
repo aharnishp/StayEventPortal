@@ -2,8 +2,12 @@
 Made using MERN stack (MongoDB + ExpressJS + ReactJS + NodeJS)
 It helps verified organizers create events visible to all.
 
+
 ## Key features
 It is responsive, animated using css and lightweight because of less number of packages used.
+
+watch demo here: 
+[G-Drive Link](https://drive.google.com/drive/folders/1Syvc4uJq8Im8tHl4GjR3h1JE0xKzNdhS?usp=sharing)
 
 ## Event card
 Event card is a way of previewing event, the colors visible on it can be customised by organizer.
